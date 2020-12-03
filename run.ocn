@@ -1,0 +1,23 @@
+simulator( 'spectre )
+design( "/filespace/w/wchen329/cadence/simulation/hybridadder_16bit_tb/spectre/schematic/netlist/netlist")
+resultsDir( "/filespace/w/wchen329/cadence/simulation//spectre/schematic")
+modelFile(
+    '("/filespace/w/wchen329/ece555/cadence/modelfile18" "")
+)
+stimulusFile( ?xlate nil
+    "/filespace/w/wchen329/ECE555_project/vectors.stim"#
+)
+analysis('tran ?stop "6n" ?errpreset "moderate" )
+envOption(
+		'analysisOrder list("tran")
+		'switchViewList '( "spectre cmos_sch cmos.sch extracted schematic" )
+)
+save( 'v "/clk" "/S_out<15>" "/S_out<14>" "/S_out<13>" "/S_out<12>" "/S_out<11>" "/S_out<10>" "/S_out<9>" "/S_out<8>" "/S_out<7>" "/S_out<6>" "/S_out<5>" "/S_out<4>" "/S_out<3>" "/S_out<2>" "/S_out<1>" "/S_out<0>" )
+save( 'i "/V0/PLUS" )
+temp( 27 )
+createNetlist()
+run()
+selectResults("tran")
+ocnPrint(?output "cadence/simulation/sim_out.txt" ?precision 16 ?numberNotation `scientific v("/clk") v("/S_out<15>") v("/S_out<14>") v("/S_out<13>") v("/S_out<12>") v("/S_out<11>") v("/S_out<10>") v("/S_out<9>") v("/S_out<8>") v("/S_out<7>") v("/S_out<6>") v("/S_out<5>") v("/S_out<4>") v("/S_out<3>") v("/S_out<2>") v("/S_out<1>") v("/S_out<0>") i("/V0/PLUS") ?step 0.025n)
+id=ipcBeginProcess("~ejhoffman/perl_progs/check_res.pl hybridadder_16bit_tb")
+ipcWaitForChild(id)
