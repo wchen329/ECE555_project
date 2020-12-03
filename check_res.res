@@ -19,18 +19,18 @@ Cout 0 0 0 0 0 0 1 1 0 1 0 0 0
 clock found in column 1
 current of V0 found in column 18
 ----------------- Comparing Results -------------------
-Rising clock occurred at time 1.300000e-09
-Rising clock occurred at time 3.800000e-09
-Rising clock occurred at time 6.300000e-09
-Rising clock occurred at time 8.800000e-09
-Rising clock occurred at time 1.130000e-08
-Rising clock occurred at time 1.380000e-08
-Rising clock occurred at time 1.630000e-08
-Rising clock occurred at time 1.880000e-08
-Rising clock occurred at time 2.130000e-08
-Rising clock occurred at time 2.380000e-08
-Rising clock occurred at time 2.630000e-08
-Rising clock occurred at time 2.880000e-08
-Rising clock occurred at time 3.130000e-08
+Rising clock occurred at time 1.050000e-09
+Rising clock occurred at time 3.050000e-09
+Rising clock occurred at time 5.050000e-09
+Rising clock occurred at time 7.050000e-09
+Rising clock occurred at time 9.050000e-09
+Rising clock occurred at time 1.105000e-08
+Rising clock occurred at time 1.305000e-08
+Rising clock occurred at time 1.505000e-08
+Rising clock occurred at time 1.705000e-08
+Rising clock occurred at time 1.905000e-08
+Rising clock occurred at time 2.105000e-08
+Rising clock occurred at time 2.305000e-08
+Rising clock occurred at time 2.505000e-08
 YAHOO!!! test passed with no errors
-Average current consumption was: 0.7425251063 mA
+Average current consumption was: 0.7825883919 mA
