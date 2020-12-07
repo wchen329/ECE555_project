@@ -1,37 +1,67 @@
 Expected results are:
-S_out<0> 1 0 0 1 0 0 0 1 0 0 0 1 0 0
-S_out<1> 1 1 1 1 1 0 0 1 0 1 1 0 1 1
-S_out<2> 0 0 0 0 1 0 0 1 0 1 1 0 0 1
-S_out<3> 0 0 0 0 0 0 0 1 0 1 1 0 0 0
-S_out<4> 0 0 0 0 1 1 0 1 0 1 1 1 1 0
-S_out<5> 0 0 1 0 0 0 0 1 0 0 1 0 0 1
-S_out<6> 0 0 0 0 1 0 0 1 0 0 0 0 0 1
-S_out<7> 1 0 0 0 0 0 0 1 0 0 1 0 0 0
-S_out<8> 0 0 0 0 1 0 0 1 0 0 0 1 0 0
-S_out<9> 0 0 1 0 0 0 0 1 0 0 0 0 1 1
-S_out<10> 0 0 0 0 1 0 0 1 0 1 1 0 0 0
-S_out<11> 0 0 0 0 0 0 0 1 0 0 1 0 0 1
-S_out<12> 0 0 0 0 1 1 0 1 0 0 0 1 1 0
-S_out<13> 0 0 1 0 0 0 0 1 0 0 0 0 0 1
-S_out<14> 0 0 0 0 1 0 0 1 0 1 0 0 0 0
-S_out<15> 0 0 0 0 0 0 0 1 0 0 1 0 0 1
-Cout 0 0 0 0 0 0 1 0 1 1 0 1 0 0
+dst<0> x 0 1 0 0 1 0
+dst<1> x 1 0 1 0 1 0
+dst<2> x 1 0 0 1 1 0
+dst<3> x 1 0 0 1 1 0
+dst<4> x 0 0 1 1 1 0
+dst<5> x 0 1 1 1 0 0
+dst<6> x 0 1 0 1 0 0
+dst<7> x 1 1 0 0 1 0
+dst<8> x 1 0 1 1 1 0
+dst<9> x 1 0 1 0 0 0
+dst<10> x 1 1 1 0 0 0
+dst<11> x 0 0 1 0 0 0
+dst<12> x 1 0 1 0 0 0
+dst<13> x 1 1 0 1 0 0
+dst<14> x 0 1 1 1 1 0
+dst<15> x 1 0 0 0 0 0
+cout x 0 0 0 0 1 1
 clock found in column 1
-current of V0 found in column 18
+current of V0 found in column 19
 ----------------- Comparing Results -------------------
-Rising clock occurred at time 7.500000e-10
-Rising clock occurred at time 2.175000e-09
-Rising clock occurred at time 3.600000e-09
-Rising clock occurred at time 5.050000e-09
-Rising clock occurred at time 6.475000e-09
-Rising clock occurred at time 7.900000e-09
-Rising clock occurred at time 9.325000e-09
-Rising clock occurred at time 1.075000e-08
-Rising clock occurred at time 1.220000e-08
-Rising clock occurred at time 1.362500e-08
-Rising clock occurred at time 1.505000e-08
-Rising clock occurred at time 1.647500e-08
-Rising clock occurred at time 1.790000e-08
-Rising clock occurred at time 1.935000e-08
-YAHOO!!! test passed with no errors
-Average current consumption was: 0.7523863638 mA
+Rising clock occurred at time 1.005000e-08
+Rising clock occurred at time 3.005000e-08
+Rising clock occurred at time 5.005000e-08
+Rising clock occurred at time 7.005000e-08
+ERROR: at time 70.00ns (vector 3) signal dst<14> was expected to be a 1, was 0.00
+ERROR: at time 70.00ns (vector 3) signal dst<13> was expected to be a 0, was: 1.80
+ERROR: at time 70.00ns (vector 3) signal dst<10> was expected to be a 1, was -0.00
+ERROR: at time 70.00ns (vector 3) signal dst<7> was expected to be a 0, was: 1.80
+ERROR: at time 70.00ns (vector 3) signal dst<5> was expected to be a 1, was 0.00
+ERROR: at time 70.00ns (vector 3) signal dst<4> was expected to be a 1, was 0.00
+ERROR: at time 70.00ns (vector 3) signal dst<3> was expected to be a 0, was: 1.80
+Rising clock occurred at time 9.005000e-08
+ERROR: at time 90.00ns (vector 4) signal dst<14> was expected to be a 1, was 0.00
+ERROR: at time 90.00ns (vector 4) signal dst<13> was expected to be a 1, was 0.00
+ERROR: at time 90.00ns (vector 4) signal dst<10> was expected to be a 0, was: 1.80
+ERROR: at time 90.00ns (vector 4) signal dst<9> was expected to be a 0, was: 1.80
+ERROR: at time 90.00ns (vector 4) signal dst<8> was expected to be a 1, was 0.00
+ERROR: at time 90.00ns (vector 4) signal dst<7> was expected to be a 0, was: 1.80
+ERROR: at time 90.00ns (vector 4) signal dst<4> was expected to be a 1, was 0.00
+ERROR: at time 90.00ns (vector 4) signal dst<3> was expected to be a 1, was 0.00
+ERROR: at time 90.00ns (vector 4) signal dst<2> was expected to be a 1, was 0.00
+ERROR: at time 90.00ns (vector 4) signal cout was expected to be a 0, was: 1.80
+Rising clock occurred at time 1.100500e-07
+ERROR: at time 110.00ns (vector 5) signal dst<15> was expected to be a 0, was: 1.80
+ERROR: at time 110.00ns (vector 5) signal dst<14> was expected to be a 1, was 0.00
+ERROR: at time 110.00ns (vector 5) signal dst<13> was expected to be a 0, was: 1.80
+ERROR: at time 110.00ns (vector 5) signal dst<12> was expected to be a 0, was: 1.80
+ERROR: at time 110.00ns (vector 5) signal dst<10> was expected to be a 0, was: 1.80
+ERROR: at time 110.00ns (vector 5) signal dst<9> was expected to be a 0, was: 1.80
+ERROR: at time 110.00ns (vector 5) signal dst<4> was expected to be a 1, was 0.00
+ERROR: at time 110.00ns (vector 5) signal dst<0> was expected to be a 1, was 0.00
+ERROR: at time 110.00ns (vector 5) signal cout was expected to be a 1, was -0.00
+Rising clock occurred at time 1.300500e-07
+ERROR: at time 130.00ns (vector 6) signal dst<15> was expected to be a 0, was: 1.80
+ERROR: at time 130.00ns (vector 6) signal dst<13> was expected to be a 0, was: 1.80
+ERROR: at time 130.00ns (vector 6) signal dst<12> was expected to be a 0, was: 1.80
+ERROR: at time 130.00ns (vector 6) signal dst<10> was expected to be a 0, was: 1.80
+ERROR: at time 130.00ns (vector 6) signal dst<9> was expected to be a 0, was: 1.80
+ERROR: at time 130.00ns (vector 6) signal dst<8> was expected to be a 0, was: 1.80
+ERROR: at time 130.00ns (vector 6) signal dst<7> was expected to be a 0, was: 1.80
+ERROR: at time 130.00ns (vector 6) signal dst<3> was expected to be a 0, was: 1.80
+ERROR: at time 130.00ns (vector 6) signal dst<2> was expected to be a 0, was: 1.80
+ERROR: at time 130.00ns (vector 6) signal dst<1> was expected to be a 0, was: 1.80
+ERROR: at time 130.00ns (vector 6) signal dst<0> was expected to be a 0, was: 1.80
+ERROR: at time 130.00ns (vector 6) signal cout was expected to be a 1, was 0.00
+Average current consumption was: 0.1179666873 mA

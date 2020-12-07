@@ -1,5 +1,5 @@
 simulator( 'spectre )
-design( "/filespace/w/wchen329/cadence/simulation/hybridadder_16bit_tb/spectre/schematic/netlist/netlist")
+design( "/filespace/w/wchen329/cadence/simulation/TopLevel/spectre/schematic/netlist/netlist")
 resultsDir( "/filespace/w/wchen329/cadence/simulation//spectre/schematic")
 modelFile(
     '("/filespace/w/wchen329/ece555/cadence/modelfile18" "")
@@ -7,17 +7,17 @@ modelFile(
 stimulusFile( ?xlate nil
     "/filespace/w/wchen329/ECE555_project/vectors.stim"
 )
-analysis('tran ?stop "20n" ?errpreset "moderate" )
+analysis('tran ?stop "150n" ?errpreset "moderate" )
 envOption(
 		'analysisOrder list("tran")
 		'switchViewList '( "spectre cmos_sch cmos.sch extracted schematic" )
 )
-save( 'v "/clk" "/S_out<15>" "/S_out<14>" "/S_out<13>" "/S_out<12>" "/S_out<11>" "/S_out<10>" "/S_out<9>" "/S_out<8>" "/S_out<7>" "/S_out<6>" "/S_out<5>" "/S_out<4>" "/S_out<3>" "/S_out<2>" "/S_out<1>" "/S_out<0>" "/Cout" )
+save( 'v "/clk" "/dst<15>" "/dst<14>" "/dst<13>" "/dst<12>" "/dst<11>" "/dst<10>" "/dst<9>" "/dst<8>" "/dst<7>" "/dst<6>" "/dst<5>" "/dst<4>" "/dst<3>" "/dst<2>" "/dst<1>" "/dst<0>" "/cout" )
 save( 'i "/V0/PLUS" )
 temp( 27 )
 createNetlist()
 run()
 selectResults("tran")
-ocnPrint(?output "cadence/simulation/sim_out.txt" ?precision 16 ?numberNotation `scientific v("/clk") v("/S_out<15>") v("/S_out<14>") v("/S_out<13>") v("/S_out<12>") v("/S_out<11>") v("/S_out<10>") v("/S_out<9>") v("/S_out<8>") v("/S_out<7>") v("/S_out<6>") v("/S_out<5>") v("/S_out<4>") v("/S_out<3>") v("/S_out<2>") v("/S_out<1>") v("/S_out<0>") v("/Cout") i("/V0/PLUS") ?step 0.025n)
-id=ipcBeginProcess("~ejhoffman/perl_progs/check_res.pl hybridadder_16bit_tb")
+ocnPrint(?output "cadence/simulation/sim_out.txt" ?precision 16 ?numberNotation `scientific v("/clk") v("/dst<15>") v("/dst<14>") v("/dst<13>") v("/dst<12>") v("/dst<11>") v("/dst<10>") v("/dst<9>") v("/dst<8>") v("/dst<7>") v("/dst<6>") v("/dst<5>") v("/dst<4>") v("/dst<3>") v("/dst<2>") v("/dst<1>") v("/dst<0>") v("/cout") i("/V0/PLUS") ?step 0.025n)
+id=ipcBeginProcess("~ejhoffman/perl_progs/check_res.pl TopLevel")
 ipcWaitForChild(id)
