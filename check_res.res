@@ -26,10 +26,6 @@ Rising clock occurred at time 5.050000e-09
 Rising clock occurred at time 6.475000e-09
 Rising clock occurred at time 7.900000e-09
 Rising clock occurred at time 9.325000e-09
-ERROR: at time 9.27ns (vector 6) signal S_out<15> was expected to be a 0, was: 1.03
-ERROR: at time 9.27ns (vector 6) signal S_out<14> was expected to be a 0, was: 1.01
-ERROR: at time 9.27ns (vector 6) signal S_out<13> was expected to be a 0, was: 1.00
-ERROR: at time 9.27ns (vector 6) signal S_out<12> was expected to be a 0, was: 0.99
 Rising clock occurred at time 1.075000e-08
 Rising clock occurred at time 1.220000e-08
 Rising clock occurred at time 1.362500e-08
@@ -37,4 +33,5 @@ Rising clock occurred at time 1.505000e-08
 Rising clock occurred at time 1.647500e-08
 Rising clock occurred at time 1.790000e-08
 Rising clock occurred at time 1.935000e-08
-Average current consumption was: 0.8448429536 mA
+YAHOO!!! test passed with no errors
+Average current consumption was: 0.7523863638 mA
