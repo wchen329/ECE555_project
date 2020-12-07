@@ -17,51 +17,126 @@ dst<14> x 0 1 1 1 1 0
 dst<15> x 1 0 0 0 0 0
 cout x 0 0 0 0 1 1
 clock found in column 1
-current of V0 found in column 19
+current of V0 found in column 18
 ----------------- Comparing Results -------------------
-Rising clock occurred at time 1.005000e-08
-Rising clock occurred at time 3.005000e-08
-Rising clock occurred at time 5.005000e-08
-Rising clock occurred at time 7.005000e-08
-ERROR: at time 70.00ns (vector 3) signal dst<14> was expected to be a 1, was 0.00
-ERROR: at time 70.00ns (vector 3) signal dst<13> was expected to be a 0, was: 1.80
-ERROR: at time 70.00ns (vector 3) signal dst<10> was expected to be a 1, was -0.00
-ERROR: at time 70.00ns (vector 3) signal dst<7> was expected to be a 0, was: 1.80
-ERROR: at time 70.00ns (vector 3) signal dst<5> was expected to be a 1, was 0.00
-ERROR: at time 70.00ns (vector 3) signal dst<4> was expected to be a 1, was 0.00
-ERROR: at time 70.00ns (vector 3) signal dst<3> was expected to be a 0, was: 1.80
-Rising clock occurred at time 9.005000e-08
-ERROR: at time 90.00ns (vector 4) signal dst<14> was expected to be a 1, was 0.00
-ERROR: at time 90.00ns (vector 4) signal dst<13> was expected to be a 1, was 0.00
-ERROR: at time 90.00ns (vector 4) signal dst<10> was expected to be a 0, was: 1.80
-ERROR: at time 90.00ns (vector 4) signal dst<9> was expected to be a 0, was: 1.80
-ERROR: at time 90.00ns (vector 4) signal dst<8> was expected to be a 1, was 0.00
-ERROR: at time 90.00ns (vector 4) signal dst<7> was expected to be a 0, was: 1.80
-ERROR: at time 90.00ns (vector 4) signal dst<4> was expected to be a 1, was 0.00
-ERROR: at time 90.00ns (vector 4) signal dst<3> was expected to be a 1, was 0.00
-ERROR: at time 90.00ns (vector 4) signal dst<2> was expected to be a 1, was 0.00
-ERROR: at time 90.00ns (vector 4) signal cout was expected to be a 0, was: 1.80
-Rising clock occurred at time 1.100500e-07
-ERROR: at time 110.00ns (vector 5) signal dst<15> was expected to be a 0, was: 1.80
-ERROR: at time 110.00ns (vector 5) signal dst<14> was expected to be a 1, was 0.00
-ERROR: at time 110.00ns (vector 5) signal dst<13> was expected to be a 0, was: 1.80
-ERROR: at time 110.00ns (vector 5) signal dst<12> was expected to be a 0, was: 1.80
-ERROR: at time 110.00ns (vector 5) signal dst<10> was expected to be a 0, was: 1.80
-ERROR: at time 110.00ns (vector 5) signal dst<9> was expected to be a 0, was: 1.80
-ERROR: at time 110.00ns (vector 5) signal dst<4> was expected to be a 1, was 0.00
-ERROR: at time 110.00ns (vector 5) signal dst<0> was expected to be a 1, was 0.00
-ERROR: at time 110.00ns (vector 5) signal cout was expected to be a 1, was -0.00
-Rising clock occurred at time 1.300500e-07
-ERROR: at time 130.00ns (vector 6) signal dst<15> was expected to be a 0, was: 1.80
-ERROR: at time 130.00ns (vector 6) signal dst<13> was expected to be a 0, was: 1.80
-ERROR: at time 130.00ns (vector 6) signal dst<12> was expected to be a 0, was: 1.80
-ERROR: at time 130.00ns (vector 6) signal dst<10> was expected to be a 0, was: 1.80
-ERROR: at time 130.00ns (vector 6) signal dst<9> was expected to be a 0, was: 1.80
-ERROR: at time 130.00ns (vector 6) signal dst<8> was expected to be a 0, was: 1.80
-ERROR: at time 130.00ns (vector 6) signal dst<7> was expected to be a 0, was: 1.80
-ERROR: at time 130.00ns (vector 6) signal dst<3> was expected to be a 0, was: 1.80
-ERROR: at time 130.00ns (vector 6) signal dst<2> was expected to be a 0, was: 1.80
-ERROR: at time 130.00ns (vector 6) signal dst<1> was expected to be a 0, was: 1.80
-ERROR: at time 130.00ns (vector 6) signal dst<0> was expected to be a 0, was: 1.80
-ERROR: at time 130.00ns (vector 6) signal cout was expected to be a 1, was 0.00
-Average current consumption was: 0.1179666873 mA
+Rising clock occurred at time 1.300000e-09
+WARNING: comparison not made for signal Q<15> for this clock edge
+WARNING: comparison not made for signal Q<14> for this clock edge
+WARNING: comparison not made for signal Q<13> for this clock edge
+WARNING: comparison not made for signal Q<12> for this clock edge
+WARNING: comparison not made for signal Q<11> for this clock edge
+WARNING: comparison not made for signal Q<10> for this clock edge
+WARNING: comparison not made for signal Q<9> for this clock edge
+WARNING: comparison not made for signal Q<8> for this clock edge
+WARNING: comparison not made for signal Q<7> for this clock edge
+WARNING: comparison not made for signal Q<6> for this clock edge
+WARNING: comparison not made for signal Q<5> for this clock edge
+WARNING: comparison not made for signal Q<4> for this clock edge
+WARNING: comparison not made for signal Q<3> for this clock edge
+WARNING: comparison not made for signal Q<2> for this clock edge
+WARNING: comparison not made for signal Q<1> for this clock edge
+WARNING: comparison not made for signal Q<0> for this clock edge
+Rising clock occurred at time 3.800000e-09
+WARNING: comparison not made for signal Q<15> for this clock edge
+WARNING: comparison not made for signal Q<14> for this clock edge
+WARNING: comparison not made for signal Q<13> for this clock edge
+WARNING: comparison not made for signal Q<12> for this clock edge
+WARNING: comparison not made for signal Q<11> for this clock edge
+WARNING: comparison not made for signal Q<10> for this clock edge
+WARNING: comparison not made for signal Q<9> for this clock edge
+WARNING: comparison not made for signal Q<8> for this clock edge
+WARNING: comparison not made for signal Q<7> for this clock edge
+WARNING: comparison not made for signal Q<6> for this clock edge
+WARNING: comparison not made for signal Q<5> for this clock edge
+WARNING: comparison not made for signal Q<4> for this clock edge
+WARNING: comparison not made for signal Q<3> for this clock edge
+WARNING: comparison not made for signal Q<2> for this clock edge
+WARNING: comparison not made for signal Q<1> for this clock edge
+WARNING: comparison not made for signal Q<0> for this clock edge
+Rising clock occurred at time 6.300000e-09
+WARNING: comparison not made for signal Q<15> for this clock edge
+WARNING: comparison not made for signal Q<14> for this clock edge
+WARNING: comparison not made for signal Q<13> for this clock edge
+WARNING: comparison not made for signal Q<12> for this clock edge
+WARNING: comparison not made for signal Q<11> for this clock edge
+WARNING: comparison not made for signal Q<10> for this clock edge
+WARNING: comparison not made for signal Q<9> for this clock edge
+WARNING: comparison not made for signal Q<8> for this clock edge
+WARNING: comparison not made for signal Q<7> for this clock edge
+WARNING: comparison not made for signal Q<6> for this clock edge
+WARNING: comparison not made for signal Q<5> for this clock edge
+WARNING: comparison not made for signal Q<4> for this clock edge
+WARNING: comparison not made for signal Q<3> for this clock edge
+WARNING: comparison not made for signal Q<2> for this clock edge
+WARNING: comparison not made for signal Q<1> for this clock edge
+WARNING: comparison not made for signal Q<0> for this clock edge
+Rising clock occurred at time 8.800000e-09
+WARNING: comparison not made for signal Q<15> for this clock edge
+WARNING: comparison not made for signal Q<14> for this clock edge
+WARNING: comparison not made for signal Q<13> for this clock edge
+WARNING: comparison not made for signal Q<12> for this clock edge
+WARNING: comparison not made for signal Q<11> for this clock edge
+WARNING: comparison not made for signal Q<10> for this clock edge
+WARNING: comparison not made for signal Q<9> for this clock edge
+WARNING: comparison not made for signal Q<8> for this clock edge
+WARNING: comparison not made for signal Q<7> for this clock edge
+WARNING: comparison not made for signal Q<6> for this clock edge
+WARNING: comparison not made for signal Q<5> for this clock edge
+WARNING: comparison not made for signal Q<4> for this clock edge
+WARNING: comparison not made for signal Q<3> for this clock edge
+WARNING: comparison not made for signal Q<2> for this clock edge
+WARNING: comparison not made for signal Q<1> for this clock edge
+WARNING: comparison not made for signal Q<0> for this clock edge
+Rising clock occurred at time 1.130000e-08
+WARNING: comparison not made for signal Q<15> for this clock edge
+WARNING: comparison not made for signal Q<14> for this clock edge
+WARNING: comparison not made for signal Q<13> for this clock edge
+WARNING: comparison not made for signal Q<12> for this clock edge
+WARNING: comparison not made for signal Q<11> for this clock edge
+WARNING: comparison not made for signal Q<10> for this clock edge
+WARNING: comparison not made for signal Q<9> for this clock edge
+WARNING: comparison not made for signal Q<8> for this clock edge
+WARNING: comparison not made for signal Q<7> for this clock edge
+WARNING: comparison not made for signal Q<6> for this clock edge
+WARNING: comparison not made for signal Q<5> for this clock edge
+WARNING: comparison not made for signal Q<4> for this clock edge
+WARNING: comparison not made for signal Q<3> for this clock edge
+WARNING: comparison not made for signal Q<2> for this clock edge
+WARNING: comparison not made for signal Q<1> for this clock edge
+WARNING: comparison not made for signal Q<0> for this clock edge
+Rising clock occurred at time 1.380000e-08
+WARNING: comparison not made for signal Q<15> for this clock edge
+WARNING: comparison not made for signal Q<14> for this clock edge
+WARNING: comparison not made for signal Q<13> for this clock edge
+WARNING: comparison not made for signal Q<12> for this clock edge
+WARNING: comparison not made for signal Q<11> for this clock edge
+WARNING: comparison not made for signal Q<10> for this clock edge
+WARNING: comparison not made for signal Q<9> for this clock edge
+WARNING: comparison not made for signal Q<8> for this clock edge
+WARNING: comparison not made for signal Q<7> for this clock edge
+WARNING: comparison not made for signal Q<6> for this clock edge
+WARNING: comparison not made for signal Q<5> for this clock edge
+WARNING: comparison not made for signal Q<4> for this clock edge
+WARNING: comparison not made for signal Q<3> for this clock edge
+WARNING: comparison not made for signal Q<2> for this clock edge
+WARNING: comparison not made for signal Q<1> for this clock edge
+WARNING: comparison not made for signal Q<0> for this clock edge
+Rising clock occurred at time 1.630000e-08
+WARNING: comparison not made for signal Q<15> for this clock edge
+WARNING: comparison not made for signal Q<14> for this clock edge
+WARNING: comparison not made for signal Q<13> for this clock edge
+WARNING: comparison not made for signal Q<12> for this clock edge
+WARNING: comparison not made for signal Q<11> for this clock edge
+WARNING: comparison not made for signal Q<10> for this clock edge
+WARNING: comparison not made for signal Q<9> for this clock edge
+WARNING: comparison not made for signal Q<8> for this clock edge
+WARNING: comparison not made for signal Q<7> for this clock edge
+WARNING: comparison not made for signal Q<6> for this clock edge
+WARNING: comparison not made for signal Q<5> for this clock edge
+WARNING: comparison not made for signal Q<4> for this clock edge
+WARNING: comparison not made for signal Q<3> for this clock edge
+WARNING: comparison not made for signal Q<2> for this clock edge
+WARNING: comparison not made for signal Q<1> for this clock edge
+WARNING: comparison not made for signal Q<0> for this clock edge
+YAHOO!!! test passed with no errors
+Average current consumption was: 0.1462966409 mA

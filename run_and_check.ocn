@@ -1,5 +1,5 @@
 simulator( 'spectre )
-design( "/filespace/w/wchen329/cadence/simulation/TopLevel/spectre/schematic/netlist/netlist")
+design( "/filespace/w/wchen329/cadence/simulation/reg_16bit_tb/spectre/schematic/netlist/netlist")
 resultsDir( "/filespace/w/wchen329/cadence/simulation//spectre/schematic")
 modelFile(
     '("/filespace/w/wchen329/ece555/cadence/modelfile18" "")
@@ -7,17 +7,17 @@ modelFile(
 stimulusFile( ?xlate nil
     "/filespace/w/wchen329/ECE555_project/vectors.stim"
 )
-analysis('tran ?stop "150n" ?errpreset "moderate" )
+analysis('tran ?stop "18n" ?errpreset "moderate" )
 envOption(
 		'analysisOrder list("tran")
 		'switchViewList '( "spectre cmos_sch cmos.sch extracted schematic" )
 )
-save( 'v "/clk" "/dst<15>" "/dst<14>" "/dst<13>" "/dst<12>" "/dst<11>" "/dst<10>" "/dst<9>" "/dst<8>" "/dst<7>" "/dst<6>" "/dst<5>" "/dst<4>" "/dst<3>" "/dst<2>" "/dst<1>" "/dst<0>" "/cout" )
+save( 'v "/clk" "/Q<15>" "/Q<14>" "/Q<13>" "/Q<12>" "/Q<11>" "/Q<10>" "/Q<9>" "/Q<8>" "/Q<7>" "/Q<6>" "/Q<5>" "/Q<4>" "/Q<3>" "/Q<2>" "/Q<1>" "/Q<0>" )
 save( 'i "/V0/PLUS" )
 temp( 27 )
 createNetlist()
 run()
 selectResults("tran")
-ocnPrint(?output "cadence/simulation/sim_out.txt" ?precision 16 ?numberNotation `scientific v("/clk") v("/dst<15>") v("/dst<14>") v("/dst<13>") v("/dst<12>") v("/dst<11>") v("/dst<10>") v("/dst<9>") v("/dst<8>") v("/dst<7>") v("/dst<6>") v("/dst<5>") v("/dst<4>") v("/dst<3>") v("/dst<2>") v("/dst<1>") v("/dst<0>") v("/cout") i("/V0/PLUS") ?step 0.025n)
-id=ipcBeginProcess("~ejhoffman/perl_progs/check_res.pl TopLevel")
+ocnPrint(?output "cadence/simulation/sim_out.txt" ?precision 16 ?numberNotation `scientific v("/clk") v("/Q<15>") v("/Q<14>") v("/Q<13>") v("/Q<12>") v("/Q<11>") v("/Q<10>") v("/Q<9>") v("/Q<8>") v("/Q<7>") v("/Q<6>") v("/Q<5>") v("/Q<4>") v("/Q<3>") v("/Q<2>") v("/Q<1>") v("/Q<0>") i("/V0/PLUS") ?step 0.025n)
+id=ipcBeginProcess("~ejhoffman/perl_progs/check_res.pl reg_16bit_tb")
 ipcWaitForChild(id)
