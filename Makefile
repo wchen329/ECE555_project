@@ -3,6 +3,6 @@ gena:
 ca:
 	./check_res.pl hybridadder_16bit_tb
 gent:
-	./gen_ocean.pl TopLevel
+	./gen_ocean_gclk.pl TopLevel
 ct:
 	./check_res.pl TopLevel
