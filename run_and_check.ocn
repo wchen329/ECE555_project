@@ -7,7 +7,7 @@ modelFile(
 stimulusFile( ?xlate nil
     "/filespace/w/wchen329/ECE555_project/vectors.stim"
 )
-analysis('tran ?stop "21n" ?errpreset "moderate" )
+analysis('tran ?stop "30n" ?errpreset "moderate" )
 envOption(
 		'analysisOrder list("tran")
 		'switchViewList '( "spectre cmos_sch cmos.sch extracted schematic" )
@@ -19,5 +19,5 @@ createNetlist()
 run()
 selectResults("tran")
 ocnPrint(?output "cadence/simulation/sim_out.txt" ?precision 16 ?numberNotation `scientific v("/clk") v("/dst<15>") v("/dst<14>") v("/dst<13>") v("/dst<12>") v("/dst<11>") v("/dst<10>") v("/dst<9>") v("/dst<8>") v("/dst<7>") v("/dst<6>") v("/dst<5>") v("/dst<4>") v("/dst<3>") v("/dst<2>") v("/dst<1>") v("/dst<0>") v("/cout") i("/V0/PLUS") ?step 0.025n)
-id=ipcBeginProcess("~ejhoffman/perl_progs/check_res.pl TopLevel")
+id=ipcBeginProcess("~ejhoffman/perl_progs/check_res_pls.pl TopLevel")
 ipcWaitForChild(id)
