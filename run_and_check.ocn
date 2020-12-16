@@ -7,7 +7,7 @@ modelFile(
 stimulusFile( ?xlate nil
     "/filespace/w/wchen329/ECE555_project/vectors.stim"
 )
-analysis('tran ?stop "30n" ?errpreset "moderate" )
+analysis('tran ?stop "15n" ?errpreset "moderate" )
 envOption(
 		'analysisOrder list("tran")
 		'switchViewList '( "spectre cmos_sch cmos.sch extracted schematic" )
