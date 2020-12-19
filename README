@@ -1,1 +1,13 @@
-This is our ECE555 project repository
+This is our ECE555 Class Project repository
+
+Included within is an ALU like object created in Cadence Integrated Circuits Front and Back (ICFB).
+The implementation is VLSI level, and completely done in schematics.
+
+The ALU has an adder as well as a shifter. The testbench performs buffering on signals which may arrive from
+long interconnects in a real design, such as gclk (global clock). The adder is of a class we call
+"trihybrid" where it is a hybrid between carry-select, carry-lookahead, and a little bit of ripple carry. It
+replaces the partial full adder and the carry lookahead logic at the most significant bit with a single full adder to save area. Our shifter
+consists of several shift cells and can perform both arithmetic and logical shifts.
+
+If you (for some reason) intend to use this, please look at the LICENSE. One big thing is that if you are in ECE555 right now, you may not use it to perform academic
+misconduct.
